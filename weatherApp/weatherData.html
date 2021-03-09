@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Quantox Intership</title>
+</head>
+<style>
+    #panel1,
+    #panel2,
+    #panel3,
+    #panel4,
+    #panel5,
+    #panel6,
+    #panel7 {
+        padding: 50px;
+        display: none;
+    }
+</style>
+
+<body>
+    <div style="margin-left: 40px;">
+
+
+        <h1 style=>WEATHER APP</h1><br>
+
+
+        <div class="card border-dark mb-3" style="display: inline-block; width: 180px;">
+            <h4 style="display: inline-block;color: red; margin-left: 50px;cursor: pointer;" id="mon"></h4>
+            <p><img src="sunny.png" class="card-img-top w-25" style="margin-left: 55px;"></p>
+            <div class="card-body">
+                <h4 style="display: inline-block; margin-left: 50px;" id="temp1"></h4>
+                <div id="panel1" style="font-size: 10px;" class="text-center">
+                    <p id="windDirection1" style="margin-left: -40px;"></p>
+                    <p><img src="north-east-arrow.png" class="h-25 w-25" style="margin-left: -30px;"></p>
+                    <p id="windSpeed1" style="margin-left: -25px;"></p>
+                    <b id="type1" style="margin-left: -30px;"></b>
+                </div>
+            </div>
+        </div>
+
+        <div class="card border-dark mb-3" style="display: inline-block; width: 180px;">
+            <h4 style="display: inline-block;color: red; margin-left: 50px;cursor: pointer;" id="tue"></h4>
+            <p><img src="rainy.png" class="card-img-top w-25" style="margin-left: 55px;"></p>
+            <div class="card-body">
+                <h4 style="display: inline-block; margin-left: 50px;" id="temp2"></h4>
+                <div id="panel2" style="font-size: 10px;" class="text-center">
+                    <p id="windDirection2" style="margin-left: -40px;"></p>
+                    <p><img src="north-west-arrow.png" class="h-50 w-50" style="margin-left: -30px;"></p>
+                    <p id="windSpeed2" style="margin-left: -25px;"></p>
+                    <b id="type2" style="margin-left: -30px;"></b>
+                </div>
+            </div>
+        </div>
+        <div class="card border-dark mb-3" style="display: inline-block; width: 180px;">
+            <h4 style="display: inline-block;color: red; margin-left: 50px;cursor: pointer;" id="wed"></h4>
+            <p><img src="cloudy.png" class="card-img-top w-25" style="margin-left: 55px;"></p>
+            <div class="card-body">
+                <h4 style="display: inline-block; margin-left: 50px;" id="temp3"></h4>
+                <div id="panel3" style="font-size: 10px;" class="text-center">
+                    <p id="windDirection3" style="margin-left: -40px;"></p>
+                    <p><img src="south-east-arrow.png" class="h-25 w-25" style="margin-left: -30px;"></p>
+                    <p id="windSpeed3" style="margin-left: -25px;"></p>
+                    <b id="type3" style="margin-left: -30px;"></b>
+                </div>
+            </div>
+        </div>
+        <div class="card border-dark mb-3" style="display: inline-block; width: 180px;">
+            <h4 style="display: inline-block;color: red; margin-left: 50px;cursor: pointer;" id="thur"></h4>
+            <p><img src="sunny.png" class="card-img-top w-25" style="margin-left: 55px;"></p>
+            <div class="card-body">
+                <h4 style="display: inline-block; margin-left: 50px;" id="temp4"></h4>
+                <div id="panel4" style="font-size: 10px;" class="text-center">
+                    <p id="windDirection4" style="margin-left: -40px;"></p>
+                    <p><img src="south-east-arrow.png" class="h-25 w-25" style="margin-left: -30px;"></p>
+                    <p id="windSpeed4" style="margin-left: -25px;"></p>
+                    <b id="type4" style="margin-left: -30px;"></b>
+                </div>
+            </div>
+        </div>
+        <div class="card border-dark mb-3" style="display: inline-block; width: 180px;">
+            <h4 style="display: inline-block;color: red; margin-left: 50px; cursor: pointer;" id="fri"></h4>
+            <p><img src="sunny.png" class="card-img-top w-25" style="margin-left: 55px;"></p>
+            <div class="card-body">
+                <h4 style="display: inline-block; margin-left: 50px;" id="temp5"></h4>
+                <div id="panel5" style="font-size: 10px;" class="text-center">
+                    <p id="windDirection5" style="margin-left: -40px;"></p>
+                    <p><img src="north-east-arrow.png" class="h-25 w-25" style="margin-left: -30px;"></p>
+                    <p id="windSpeed5" style="margin-left: -25px;"></p>
+                    <b id="type5" style="margin-left: -30px;"></b>
+                </div>
+            </div>
+        </div>
+        <div class="card border-dark mb-3" style="display: inline-block; width: 180px;">
+            <h4 style="display: inline-block;color: red; margin-left: 50px; cursor: pointer;" id="sat"></h4>
+            <p><img src="rainy.png" class="card-img-top w-25" style="margin-left: 55px;"></p>
+            <div class="card-body">
+                <h4 style="display: inline-block; margin-left: 50px;" id="temp6"></h4>
+                <div id="panel6" style="font-size: 10px;" class="text-center">
+                    <p id="windDirection6" style="margin-left: -40px;"></p>
+                    <p><img src="south-east-arrow.png" class="h-25 w-25" style="margin-left: -30px;"></p>
+                    <p id="windSpeed6" style="margin-left: -25px;"></p>
+                    <b id="type6" style="margin-left: -30px;"></b>
+                </div>
+            </div>
+        </div>
+        <div class="card border-dark mb-3" style="display: inline-block; width: 180px;">
+            <h4 style="display: inline-block;color: red;margin-left: 50px; cursor: pointer;" id="sun"></h4>
+            <p><img src="rainy.png" class="card-img-top w-25" style="margin-left: 55px;"></p>
+            <div class="card-body">
+                <h4 style="display: inline-block; margin-left: 50px;" id="temp7"></h4>
+                <div id="panel7" style="font-size: 10px;" class="text-center">
+                    <p id="windDirection7" style="margin-left: -40px;"></p>
+                    <p><img src="north-east-arrow.png" class="h-25 w-25" style="margin-left: -30px;"></p>
+                    <p id="windSpeed7" style="margin-left: -25px;"></p>
+                    <b id="type7" style="margin-left: -30px;"></b>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="display: inline-block; margin-left: 100px; margin-top: 50px;">
+            <p>Type a value in the Celsius field to convert the value to Kelvin:</p>
+            <p>
+                <label>Celsius</label>
+                <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)"
+                    onchange="temperatureConverter(this.value)">
+            </p>
+            <p>Kelvin: <span id="outputKelvin"></span></p>
+        </div>
+
+        <div style="display: inline-block; margin-left: 100px;">
+            <p>Type a value in the MPS field to convert the value to KPH:</p>
+            <p>
+                <label>MPS</label>
+                <input id="inputMPH" type="number" placeholder="MPS" oninput="speedConverter(this.value)"
+                    onchange="speedConverter(this.value)">
+            </p>
+            <p>KPH: <span id="outputKPH"></span></p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script src="weatherData.js"></script>
